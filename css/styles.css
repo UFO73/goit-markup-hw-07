@@ -113,6 +113,8 @@ letter-spacing: 0.03em;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.3;
+padding-top: 24px;
+padding-bottom: 24px;
 }
 
 .logo-accent {
@@ -217,6 +219,16 @@ line-height: 1.3;
     left: 0;
 }
 
+@media screen and (max-width: 767px) {
+    .contact {
+        display: none;
+    }
+
+    .page-nav {
+        display: none;
+    }
+}
+
 /*============= HEADER =========== */
 
 /* ============= MAIN ========== */
@@ -254,10 +266,8 @@ line-height: 1.3;
 
 .hero {
     text-align: center;
-    padding: 192px;
-    
+    padding: 112px 57px;
     max-width: 1440px;
-    height: 603px;
     margin-left: auto;
     margin-right: auto;
 
@@ -266,7 +276,7 @@ line-height: 1.3;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ), 
-    url(../images/people-office.jpg)
+    /* url(../images/people-office.jpg) */
 }
 
 .hero-box {
@@ -282,10 +292,10 @@ line-height: 1.3;
 .hero-title {
     color: var(--white-accent-color);
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 
     font-weight: 600;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.1;
 }
 /* Hero button */
@@ -307,6 +317,27 @@ line-height: 1.3;
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--ocean-blue-accent);
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        margin-bottom: 40px;
+    }
+
+    .hero {
+        padding-bottom: 108px;
+    }
+}
+
+@media screen and (min-width: 1152px) {
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
+    .hero {
+        padding: 187px ;
+    }
 }
 
 /* ============= HERO ============== */
@@ -968,14 +999,20 @@ color: var(--logo-footer-white);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    padding-left: 24px;
-    padding-right: 24px;
+    width: 392px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-bottom: 24px;
     padding-top: 72px;
     background-color: var(--modal-window);
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+    }
 }
 
 .modal-close-btn {
