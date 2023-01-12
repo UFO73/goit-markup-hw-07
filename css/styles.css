@@ -139,7 +139,7 @@ padding-bottom: 24px;
 
 
 .page-nav {
-    margin-left: 77px;
+    margin-left: 123px;
 }
 
 
@@ -163,9 +163,11 @@ padding-bottom: 24px;
 .contact a {
     color: var(--primary-text-color);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.3;
     transition: color var(--transform);
+    letter-spacing: 4%;
+    
 }
 
 .contact a:hover,
@@ -183,23 +185,10 @@ padding-bottom: 24px;
     padding-bottom: 24px;
 }
 
-.page-item:first-child {
-    margin-left: 0;
-}
-
-.contact-item {
-    margin-left: 40px;
-}
-
 .contact-item:first-child {
     margin-left: 0;
 }
 
-.contact-item a {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
 
 .page-link.line {
     color: var(--ocean-blue-accent);
@@ -222,6 +211,7 @@ padding-bottom: 24px;
 .flex-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .mobile-open-menu {
@@ -293,6 +283,52 @@ padding-bottom: 24px;
     fill: #FFFFFF;
 }
 
+.social-list.menu-social {
+    justify-content: space-between;
+}
+
+.menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--title-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--ocean-blue-accent);
+}
+
+.menu-item-link {
+    margin-bottom: 40px;
+}
+
+.menu-item-link:last-child {
+    margin-bottom: 0;
+}
+
+.menu-tel {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--accent-color);
+    margin-bottom: 40px;
+}
+
+.menu-mail {
+    display: block;
+    margin-bottom: 48px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+}
+
+.menu-nav-list {
+    margin-bottom: 284px;
+}
+
 @media screen and (max-width: 767px) {
     .contact {
         display: none;
@@ -300,6 +336,45 @@ padding-bottom: 24px;
 
     .page-nav {
         display: none;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .mobile-open-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1152px) {
+    .page-nav {
+        margin-left: 76px;
+    }
+
+    .contact-item a {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .page-item:first-child {
+        margin-left: 0;
+    }
+    
+    .contact-item {
+        margin-left: 40px;
+    }
+
+
+    .contact a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        transition: color var(--transform);
+        letter-spacing: 2%;
+    }
+
+    .contact {
+        display: flex;
     }
 }
 
@@ -925,10 +1000,15 @@ padding-bottom: 24px;
 /*========== PORTFOLIO =============*/
 
 .portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
+.flex-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
 
 .filter-btn {
     color: var(--accent-color);
@@ -942,6 +1022,7 @@ padding-bottom: 24px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 16px;
     transition: background-color var(--transform), color var(--transform), border var(--transform), box-shadow var(--transform);
 }
 
@@ -949,7 +1030,8 @@ padding-bottom: 24px;
     margin-left: 24px;
 }
 
-.filter-btn-item:first-child {
+.filter-btn-item:first-child,
+.filter-btn-item:nth-child(4) {
     margin-left: 0;
 }
 
@@ -961,10 +1043,38 @@ padding-bottom: 24px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter {
-    justify-content: center;
-    margin-bottom: 72px;
+@media screen and (min-width: 768px) {
+    .filter-btn-item:nth-child(4) {
+        margin-left: 24px;
+    }
+
+    .flex-portfolio {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .portfolio {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .filter-btn {
+        margin-bottom: 0;
+    }
+    
 }
+
+@media screen and (min-width: 1152px) {
+    .portfolio {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+
+    .flex-portfolio {
+        margin-bottom: 72px;
+    }
+}
+
 /*========== PORTFOLIO =============*/
 
 /* ============ EXEMPLES ============ */
