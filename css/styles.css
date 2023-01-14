@@ -76,7 +76,7 @@ img {
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1152px;
+        max-width: 1200px;
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -572,7 +572,7 @@ padding-bottom: 24px;
     margin-bottom: 0px;
 }
 /* phone screen */
-@media screen and (max-width: 1151px) {
+@media screen and (max-width: 1199px) {
     .social-logo-info {
         display: none;
     }
