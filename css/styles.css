@@ -569,6 +569,9 @@ padding-bottom: 24px;
     text-align: center;
 }
 
+.info-item:not(:last-child) {
+    margin-bottom: 72px;
+}
 
 /* phone screen */
 @media screen and (max-width: 1199px) {
@@ -594,6 +597,10 @@ padding-bottom: 24px;
         text-align: left;
     }
 
+    .info-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
 }
 
 /* desktop screen */
@@ -601,10 +608,6 @@ padding-bottom: 24px;
 @media screen and (min-width: 1200px) {
     .info-item p {
         max-width: 264px;
-    }
-
-    .info-item {
-        margin-bottom: 0;
     }
 
     .info-logo-box {
@@ -616,10 +619,6 @@ padding-bottom: 24px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .info-item:first-child {
-        margin-left: 0;
     }
 
     .list.info {
@@ -636,7 +635,6 @@ padding-bottom: 24px;
     }
 
 }
-
 
 
 
