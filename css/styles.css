@@ -552,7 +552,7 @@ padding-bottom: 24px;
     }
 
     .hero {
-        padding: 187px ;
+        padding: 187px 0;
     }
 }
 
@@ -569,10 +569,6 @@ padding-bottom: 24px;
     text-align: center;
 }
 
-
-.info-item:nth-child(-n + 2) {
-    margin-bottom: 72px;
-}
 
 /* phone screen */
 @media screen and (max-width: 1199px) {
@@ -591,6 +587,7 @@ padding-bottom: 24px;
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
+        row-gap: 72px;
     }
 
     .section-title-info {
@@ -607,7 +604,6 @@ padding-bottom: 24px;
     }
 
     .info-item {
-        margin-left: 24px;
         margin-bottom: 0;
     }
 
@@ -979,6 +975,7 @@ padding-bottom: 24px;
     .footer-flex {
         display: flex;
         flex-wrap: wrap;
+        padding-left: 110px;
     }
 
     .footer-social {
@@ -1035,6 +1032,7 @@ padding-bottom: 24px;
 
     .footer-flex {
         flex-wrap: nowrap;
+        padding-left: 0;
     }
 
     .text-conteiner {
